@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=quicksand@500&f[]=general-sans@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Le Juste Prix</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title">
+        <h1>L€ JU$T€ ₱RIX</h1>
+    </div>
+
+    <div class="guess-parent">
+        <form id="form">
+            <div class="guess">
+                <div class="top-container">
+                    <label for="price"><input id="price" class="form-control"
+                                              placeholder="Devinez le prix ! (entre 0 et 10000)"/></label>
+                    <button type="submit" class="button button-primary">Deviner</button>
+                    <button type="submit" onclick="reloadPage()" class="button button-secondary">Rejouer</button>
+                </div>
+
+                <div class="bottom-container">
+                    <span class="alert">Vous devez rentrer un nombre.</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="answers">
+        <div id="instructions">
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>

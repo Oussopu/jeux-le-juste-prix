@@ -1,0 +1,136 @@
+html, body {
+    background-color: #333745;
+}
+
+.title {
+    font-family: 'General Sans', sans-serif;
+    color: #FCF6BD;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 1.8em;
+}
+
+.guess-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.guess {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 5px;
+}
+
+.top-container {
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-container {
+    margin-top: 1vh;
+}
+
+.button {
+    height: 5.6vh;
+    width: 8vw;
+    border-radius: 5px;
+    background-color: #A9DEF9;
+    margin-left: 1vw;
+}
+
+.form-control {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.alert {
+    font-family: sans-serif;
+    margin-left: 1vw;
+    color: red;
+}
+
+.answers {
+    height: 38vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#instructions {
+    color: black;
+    width: 41vw;
+}
+
+.instruction {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.plus {
+    background-color: #E4C1F9;
+}
+
+.moins {
+    background-color: #FF99C8;
+}
+
+.fini {
+    background-color: #D0F4DE;
+}
+
+@media (max-width: 800px) {
+    .title h1 {
+        font-size: 1.5em;
+    }
+
+    .guess {
+        width: 80vw;
+    }
+
+    .button {
+        height: 5.7vh;
+        width: 16vw;
+    }
+
+    .form-control {
+        width: 60vw;
+    }
+
+    .alert {
+        margin-left: 2vw;
+    }
+
+    #instructions {
+        color: white;
+        width: 82vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .button {
+        width: 25vw;
+    }
+
+    .form-control {
+        width: 51vw;
+    }
+
+    ::placeholder {
+        font-size: 0.8em;
+    }
+
+    .title h1 {
+        font-size: 1.5em;
+    }
+}
